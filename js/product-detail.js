@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function populateProductData(product) {
-        // Основна информация
         productName.textContent = product.name;
         productCategory.textContent = getCategoryName(product.category);
         productPrice.textContent = product.price.toFixed(2);
