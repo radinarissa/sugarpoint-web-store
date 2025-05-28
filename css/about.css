@@ -1,0 +1,167 @@
+.about-section {
+    background-color: #fff;
+    padding: 0;
+    position: relative;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    max-width: 450px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.03);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #c41f54;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-preview {
+    background-color: #fff;
+    padding: 0;
+    position: relative;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.value-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.values-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.values-content h2 {
+    text-align: center;
+    color: #c41f54;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-photo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px 15px 0 0;
+}
+
+.team-member h3 {
+    margin: 15px 0 5px;
+    padding: 0 20px;
+}
+
+.team-role {
+    color: #c41f54;
+    font-weight: bold;
+    padding: 0 20px;
+    margin-bottom: 5px;
+}
+
+.team-member p:last-child {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+.team-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.team-content h2 {
+    text-align: center;
+    color: #c41f54;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .about-text {
+        text-align: center;
+    }
+    
+    .values-grid, 
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}

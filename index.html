@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugarpoint - Вкусни кроасани и New York rolls</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product_index.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sugarpoint Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Начало</a></li>
+                <li><a href="products.html">Продукти</a></li>
+                <li><a href="about.html">За нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html" class="shopping-cart">Кошница</a></li>
+            </ul>
+            <ul id="user-nav" class="user-nav">
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+            <div class="wave-top"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Най-вкусните сладкиши<br> в града</h2>
+                    <p>Приготвени с любов и натурални <br> съставки за незабравими моменти</p>
+                    <a href="products.html" class="btn">Разгледай всички продукти</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/homePhoto.jpg" alt="Вкусни десерти">
+                </div>
+            </div>
+        </section>
+        <div class="wave-bottom"></div>
+        <div class="wave-top"></div>
+        <section id="featured-products" class="featured-products">
+            
+            <h2>Най-популярни продукти</h2>
+            
+            <div class="product-list" id="featured-products-list">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="images/vanilla.png" alt="Кроасан с ванилия" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Кроасан с ванилия</h4>
+                        <p class="description">Хрупкав кроасан, пълен с вкусен ванилов крем.</p>
+                        <p class="price">4.50 лв</p>
+                        <button class="add-to-cart" data-id="1">Добави в кошницата</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="images/chocolate.png" alt="Кроасан с шоколад" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Кроасан с шоколад</h4>
+                        <p class="description">Класически кроасан с богата шоколадова плънка.</p>
+                        <p class="price">4.80 лв</p>
+                        <button class="add-to-cart" data-id="2">Добави в кошницата</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="images/new_york_roll_caramel.png" alt="New York Roll с карамел" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <div class="product-info">
+                        <h4>New York Roll с карамел</h4>
+                        <p class="description">Пухкав New York Roll с карамелена глазура и кремообразна плънка.</p>
+                        <p class="price">5.50 лв</p>
+                        <button class="add-to-cart" data-id="5">Добави в кошницата</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-cta">
+                <a href="products.html" class="btn btn-outline">ВИЖ ВСИЧКИ ПРОДУКТИ</a>
+            </div>
+        </section>
+        <div class="wave-bottom"></div>
+        <div class="wave-top"></div>
+        <section id="about-preview" class="about-preview">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/home_about.png" alt="За нас">
+                </div>
+                <div class="about-text">
+                    <h2>За Sugarpoint</h2>
+                    <p>Ние сме малка, но страстна пекарна, посветена на изкуството на сладкарството. Нашите майстори пекари използват само най-качествените съставки, за да създадат вкусни кроасани и New York rolls, които ще ви накарат да се върнете за още.</p>
+                    <p>Всеки продукт е приготвен ръчно с много любов и внимание към детайла. Нашата мисия е да направим деня ви по-сладък с всяка хапка.</p>
+                    <a href="about.html" class="btn">Научи повече за нас</a>
+                </div>
+            </div>
+            <div class="wave-bottom"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Свържете се с нас</h3>
+                <p>Адрес: ул. "Кракра" 22, София</p>
+                <p>Телефон: 088 202 2727</p>
+                <p>Имейл: info@sugarpoint.bg</p>
+            </div>
+            <div class="social-media">
+                <h3>Последвайте ни</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sugarpoint. Всички права запазени.</p>
+        </div>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

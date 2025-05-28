@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление на продукти - Sugarpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sugarpoint Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="products.html">Продукти</a></li>
+                <li><a href="about.html">За нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html" class="shopping-cart">Кошница</a></li>
+            </ul>
+            <ul id="user-nav" class="user-nav">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="admin-container">
+            <div class="admin-header">
+                <h1>Управление на продукти</h1>
+                <a href="admin.html" class="back-link">← Назад към админ панела</a>
+            </div>
+            
+            <div class="admin-actions">
+                <button id="add-product-btn" class="btn">Добави нов продукт</button>
+            </div>
+            
+            <div id="product-form-container" class="form-container" style="display: none;">
+                <h2>Добави/Редактирай продукт</h2>
+                <form id="product-form">
+                    <input type="hidden" id="product-id">
+                    
+                    <div class="form-group">
+                        <label for="product-name">Име</label>
+                        <input type="text" id="product-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product-price">Цена</label>
+                        <input type="number" id="product-price" step="0.01" min="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product-image">Изображение (име на файл)</label>
+                        <input type="text" id="product-image" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product-category">Категория</label>
+                        <select id="product-category" required>
+                            <option value="croissant">Кроасан</option>
+                            <option value="new_york_roll">New York Roll</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product-description">Описание</label>
+                        <textarea id="product-description" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="product-featured">
+                            Акцентиран продукт
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Запази</button>
+                        <button type="button" id="cancel-product-btn" class="btn btn-secondary">Отказ</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="product-list-container">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Изображение</th>
+                            <th>Име</th>
+                            <th>Цена</th>
+                            <th>Категория</th>
+                            <th>Акцентиран</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="products-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Свържете се с нас</h3>
+                <p>Адрес: ул. "Кракра" 22, София</p>
+                <p>Телефон: 088 202 2727</p>
+                <p>Имейл: info@sugarpoint.bg</p>
+            </div>
+            <div class="social-media">
+                <h3>Последвайте ни</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sugarpoint. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin-products.js"></script>
+</body>
+</html>

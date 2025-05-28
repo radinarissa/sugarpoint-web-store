@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Успешна поръчка - Sugarpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order-success.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sugarpoint Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="products.html">Продукти</a></li>
+                <li><a href="about.html">За нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html" class="shopping-cart">Кошница</a></li>
+            </ul>
+            <ul id="user-nav" class="user-nav">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="success-container">
+            <div class="success-icon">✓</div>
+            <h1>Поръчката е приета успешно!</h1>
+            <p>Благодарим ви за вашата поръчка. Номерът на поръчката е: <span id="order-number"></span></p>
+            <p>Изпратихме потвърждение на вашия имейл.</p>
+            <p>Очаквайте доставка в рамките на 1-2 работни дни.</p>
+            
+            <div class="success-actions">
+                <a href="index.html" class="btn">Връщане към началото</a>
+                <a href="products.html" class="btn btn-outline">Разгледай още продукти</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Свържете се с нас</h3>
+                <p>Адрес: ул. "Кракра" 22, София</p>
+                <p>Телефон: 088 202 2727</p>
+                <p>Имейл: info@sugarpoint.bg</p>
+            </div>
+            <div class="social-media">
+                <h3>Последвайте ни</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sugarpoint. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const orderNumber = urlParams.get('order');
+            
+            if (orderNumber) {
+                document.getElementById('order-number').textContent = orderNumber;
+            } else {
+                document.getElementById('order-number').textContent = 'N/A';
+            }
+        });
+    </script>
+</body>
+</html>

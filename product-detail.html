@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукт - Sugarpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sugarpoint Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="products.html" class="active">Продукти</a></li>
+                <li><a href="about.html">За нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html" class="shopping-cart">Кошница</a></li>
+            </ul>
+            <ul id="user-nav" class="user-nav">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <div class="breadcrumb-container">
+                <a href="index.html">Начало</a>
+                <span class="breadcrumb-separator">></span>
+                <a href="products.html">Продукти</a>
+                <span class="breadcrumb-separator">></span>
+                <span id="breadcrumb-product-name">Продукт</span>
+            </div>
+        </div>
+        <section class="product-detail-section">
+            <div class="product-detail-container">
+                <div class="product-detail-layout">
+                    <div class="product-image-section">
+                        <div class="product-main-image">
+                            <img id="product-image" src="" alt="" onerror="this.src='images/placeholder.jpg'">
+                        </div>
+                    </div>
+                    <div class="product-info-section">
+                        <h1 id="product-name">Зареждане...</h1>
+                        
+                        <p class="product-category">
+                            Категория: <span id="product-category"></span>
+                        </p>
+                        
+                        <div class="product-price">
+                            <span id="product-price">0.00</span> лв
+                        </div>
+                        
+                        <div class="product-description">
+                            <h3>Описание</h3>
+                            <p id="product-description">Зареждане на описанието...</p>
+                        </div>
+                        
+                        <div class="product-ingredients">
+                            <h3>Състав</h3>
+                            <p id="product-ingredients">Зареждане на състава...</p>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button id="decrease-quantity" class="quantity-btn">-</button>
+                                <input type="number" id="quantity-input" value="1" min="1" max="10">
+                                <button id="increase-quantity" class="quantity-btn">+</button>
+                            </div>
+                            
+                            <button id="add-to-cart-btn" class="btn add-to-cart-detail">
+                                Добави в кошницата
+                            </button>
+                        </div>
+                        
+                        <div class="product-navigation">
+                            <a href="products.html" class="back-to-products">
+                                ← Обратно към продукти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Свържете се с нас</h3>
+                <p>Адрес: ул. "Кракра" 22, София</p>
+                <p>Телефон: 088 202 2727</p>
+                <p>Имейл: info@sugarpoint.bg</p>
+            </div>
+            <div class="social-media">
+                <h3>Последвайте ни</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sugarpoint. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>

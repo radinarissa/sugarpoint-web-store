@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Sugarpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sugarpoint Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="products.html">Продукти</a></li>
+                <li><a href="about.html">За нас</a></li>
+                <li><a href="contact.html" class="active">Контакти</a></li>
+                <li><a href="cart.html" class="shopping-cart">Кошница</a></li>
+            </ul>
+            <ul id="user-nav" class="user-nav">
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="wave-top"></div>
+            <div class="header-content">
+                <h1>Контакти</h1>
+                <p>Свържете се с нас. Ще се радваме да ви помогнем!</p>
+            </div>
+            <div class="wave-bottom"></div>
+        </section>
+
+        <section class="contact-section">
+            <div class="wave-top"></div>
+            <div class="contact-content">
+                <div class="contact-info-block">
+                    <h2>Нашите контакти</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h3>Адрес</h3>
+                                <p>ул. "Кракра" 22, София, 1000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h3>Телефон</h3>
+                                <p>088 202 2727</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <h3>Имейл</h3>
+                                <p>info@sugarpoint.bg</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-text">
+                                <h3>Работно време</h3>
+                                <p>Понеделник - Петък: 8:00 - 19:00</p>
+                                <p>Събота - Неделя: 9:00 - 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media-contact">
+                        <h3>Последвайте ни в социалните мрежи</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">FB</a>
+                            <a href="#" class="social-icon">IG</a>
+                            <a href="#" class="social-icon">TW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-block">
+                    <h2>Изпратете ни съобщение</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Име</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Имейл</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Съобщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Изпрати</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="wave-bottom"></div>
+        <div class="wave-top"></div>
+        <section class="map-section">
+            <h2>Как да ни намерите</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.5398972123286!2d23.322349315444775!3d42.70200997916523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa851356255555%3A0x57b1fd2f35bc03fe!2sul.%20%22Krakra%22%2022%2C%201000%20Sofia%20Center%2C%20Sofia!5e0!3m2!1sen!2sbg!4v1629321456780!5m2!1sen!2sbg" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+     <div class="wave-bottom"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Свържете се с нас</h3>
+                <p>Адрес: ул. "Кракра" 22, София</p>
+                <p>Телефон: 088 202 2727</p>
+                <p>Имейл: info@sugarpoint.bg</p>
+            </div>
+            <div class="social-media">
+                <h3>Последвайте ни</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sugarpoint. Всички права запазени.</p>
+        </div>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

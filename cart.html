@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошница - Sugarpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Sugarpoint Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="products.html">Продукти</a></li>
+                <li><a href="about.html">За нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html" class="active shopping-cart">Кошница</a></li>
+            </ul>
+            <ul id="user-nav" class="user-nav">
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-page-container">
+            <h1 class="cart-page-title">Кошница</h1>
+            
+            <div class="cart-layout">
+                <div class="cart-items-section">
+                    <div id="cart-items-container">
+                    </div>
+                    <div class="empty-cart-message" style="display: none;">
+                        <h3>Вашата кошница е празна</h3>
+                        <p>Разгледайте нашите вкусни сладкиши и добавете нещо вкусно в кошницата.</p>
+                        <a href="products.html" class="btn">Разгледай продукти</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary-section">
+                    <div class="cart-summary" id="cart-summary">
+                        <h2>Обобщение</h2>
+                        <div class="cart-totals">
+                            <div class="subtotal-row">
+                                <span>Междинна сума:</span>
+                                <span id="subtotal">0.00 лв</span>
+                            </div>
+                            <div class="shipping-row">
+                                <span>Доставка:</span>
+                                <span id="shipping">5.00 лв</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Общо:</span>
+                                <span id="total">0.00 лв</span>
+                            </div>
+                        </div>
+                        <div class="promo-code">
+                            <input type="text" id="promo-input" placeholder="Промо код">
+                            <button id="apply-promo" class="btn-small">Приложи</button>
+                        </div>
+                        <button id="checkout-btn" class="btn checkout-btn">Продължи към плащане</button>
+                        <div class="continue-shopping">
+                            <a href="products.html">
+                                <span>&#8592;</span> Продължи пазаруването
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Свържете се с нас</h3>
+                <p>Адрес: ул. "Кракра" 22, София</p>
+                <p>Телефон: 088 202 2727</p>
+                <p>Имейл: info@sugarpoint.bg</p>
+            </div>
+            <div class="social-media">
+                <h3>Последвайте ни</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sugarpoint. Всички права запазени.</p>
+        </div>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
