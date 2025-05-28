@@ -415,8 +415,8 @@ async function loadAllProducts() {
         }
         
         if (subtotalElement) subtotalElement.textContent = '0.00 лв';
-        if (shippingElement) shippingElement.textContent = '3.00 лв';
-        if (totalElement) totalElement.textContent = '3.00 лв';
+        if (shippingElement) shippingElement.textContent = '5.00 лв';
+        if (totalElement) totalElement.textContent = '5.00 лв';
         return;
     }
     
@@ -459,7 +459,7 @@ async function loadAllProducts() {
         removeButton.addEventListener('click', () => removeFromCart(item.id));
     });
     
-    const shipping = 3.00;
+    const shipping = 5.00;
     const total = subtotal + shipping;
     
     if (subtotalElement) {
