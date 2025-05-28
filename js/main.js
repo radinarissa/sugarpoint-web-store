@@ -566,7 +566,7 @@ async function loadAllProducts() {
         
         const discountAmount = subtotal * discount;
         const newSubtotal = subtotal - discountAmount;
-        const shipping = 3.00;
+        const shipping = 5.00;
         const total = newSubtotal + shipping;
         
         const subtotalElement = document.getElementById('subtotal');
